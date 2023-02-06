@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/singin.css" %}" />
+    {% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"> {% endcomment %}
+<body>
+
+{% block body %}
+
+  <h1></h1>
+
+{% endblock body %}
+
+
+<header>
+  <div class="wrap-logo">
+  <a class="logo">TaskPay</a>
+  </div>
+  <nav>
+    <a href="http://127.0.0.1:8000/task/singin/" style='background: rgb(155, 210, 155); font-weight: 900;'>SingIn</a>
+    <a href="http://127.0.0.1:8000/task/login/">LogIn</a>
+  </nav>
+</header>
+
+
+<div class="category-wrap">
+  <h3>Категории</h3>
+  <ul>
+    <li><a href="http://127.0.0.1:8000/task/">Taskes</a></li>
+    <li><a href="http://127.0.0.1:8000/task/">Important</a></li>
+  </ul>
+</div>
+
+<form class="reg-box">
+    <h1 class="register-h1">REGISTER</h1>
+
+    <div class="gmail">
+      <input type="text" placeholder="Gmail">
+    </div>
+
+    <div class="login">
+      <input type="text" placeholder="Login">
+    </div>
+
+
+
+    <div class="password">
+      <input type="password" placeholder="Password">
+    </div>
+
+    <div class="remember">
+      <input type="checkbox" class="checkbox">
+      <label for="checkbox">Remember your password ?</label>
+    </div>
+
+    <div class="btn">
+      <button class="btn-reg">Register</button>
+    </div>
+    
+    <div class="haveac">
+      <p class="haveac-text">You have an account ? 
+        <a href='http://127.0.0.1:8000/playground/login/'>Login</a>
+      </p>
+    </div>
+      
+
+    <div class="another-login">
+      <p>-Another register-</p>
+      <a href='https://google.com'><i class="fa fa-google"></i> OR</a>
+      <a href='https://github.com'><i class="fa fa-github"></i></a>
+    </div>
+  </form>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+</body>
+</html>

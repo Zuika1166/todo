@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/home.css" %}" />
+    {% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"> {% endcomment %}
+<body>
+
+{% block body %}
+
+  <h1></h1>
+
+{% endblock body %}
+
+
+<header>
+  <div class="wrap-logo">
+  <a class="logo">TaskPay</a>
+  </div>
+  <nav>
+    <a href="http://127.0.0.1:8000/task/singin/">SingIn</a>
+    <a href="http://127.0.0.1:8000/task/login/">LogIn</a>
+  </nav>
+</header>
+
+
+<div class="category-wrap">
+  <h3>Категории</h3>
+  <ul>
+    <li><a href="http://127.0.0.1:8000/task/">Taskes</a></li>
+    <li><a href="http://127.0.0.1:8000/task/important" style='background: rgb(155, 210, 155); font-weight: 900;'>Important</a></li>
+  </ul>
+</div>
+
+<form class="task">
+  <div class="header_task">
+    <h3 class="h3_task">My Tasks</h3>
+    <h1 class="logo_task">LOGO</h1>
+  </div>
+
+  <div class="full_task">
+    <input type='checkbox' class="h3_task">
+    <p class="h3_task">My task 1</p>
+    <input type='checkbox' class="h3_task">
+  </div>
+
+  <div class="input_task">
+    <form>
+      <input type="text">
+      <input type="submit">
+    </form>
+  </div>
+  
+</form>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+</body>
+</html>

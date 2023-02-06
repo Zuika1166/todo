@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "css/home.css" %}" />
+    {% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"> {% endcomment %}
+<body>
+
+{% block body %}
+
+  <h1></h1>
+
+{% endblock body %}
+
+
+<header>
+  <div class="wrap-logo">
+  <a class="logo">TaskPay</a>
+  </div>
+  <nav>
+    <a href="http://127.0.0.1:8000/task/singin/">SingIn</a>
+    <a href="http://127.0.0.1:8000/task/login/" style='background: rgb(155, 210, 155); font-weight: 900;'>LogIn</a>
+  </nav>
+</header>
+
+
+<div class="category-wrap">
+  <h3>Категории</h3>
+  <ul>
+    <li><a href="http://127.0.0.1:8000/task/">Taskes</a></li>
+    <li><a href="http://127.0.0.1:8000/task/">Important</a></li>
+  </ul>
+</div>
+
+<form class="login_box">
+    <h1 class="login-h1">LOGIN</h1>
+    <div class="login">
+      <input type="text" class="login" placeholder="Login">
+    </div>
+    <div class="password">
+      <input type="password" class="password" placeholder="Password">
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox" class="checkboxes">
+      <label for="checkboxes">Remember your password ?</label>
+    </div>
+
+    <div class="button">
+      <button class="login_button">Login</button>
+    </div>
+
+    <div class="not_register">
+      <h1 class="h">Not register? <a href="http://127.0.0.1:8000/playground/singin">SingIn</a></h1>
+    </div>
+    <div class="another-login">
+      <p>-Another register-</p>
+      <a href='https://google.com'><i class="fa fa-google"></i></a>
+      <a href='https://github.com'><i class="fa fa-github"></i></a>
+    </div>
+  </form>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+</body>
+</html>
